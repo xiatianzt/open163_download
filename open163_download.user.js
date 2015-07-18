@@ -207,54 +207,7 @@ function processspecialpage(url,doc){
     }
     //xbug(movurl);
     count = 0;
-    /*getmovpage(movurl[count],document,function(movdoc){
-                xbug("h1",count,"h1");
-                geturl(movurl[count],movdoc,function(curmovieflv,zh_srt,en_srt){
-                    insert2(curmovieflv,zh_srt,en_srt,ahref[count],movdoc);
-                    
-                });
-            });*/
-    //count++;
-    //sleep(5000);
     timer = setInterval(sentMsg,3000);
-    /*for(var i=0;i<list1tr.length;i++){
-            var j = i;
-            setTimeout(getmovpage(movurl[i],doc,function(movdoc){
-                xbug("h",j,"h");
-                xbug(movurl[j]);
-                geturl(movurl[j],movdoc,function(curmovieflv,zh_srt,en_srt){
-                    insert2(curmovieflv,zh_srt,en_srt,ahref[i],movdoc);
-                });
-            }),1000);
-    }*/
-    /*var j = 0;
-    ahref = new Array();
-    movurl = new Array();
-    timer = null;
-    for(var i=0;i<list2tr.length;i++){
-        if(list2tr[i].getAttribute("class") == null)
-            continue;
-        //xbug(i);
-        if(list2tr[i].getAttribute("class")=="u-even" || list2tr[i].getAttribute("class")=="u-odd"){
-            ahref[j] = list2tr[i].getElementsByTagName("a")[0];
-            //xbug(ahref);
-            movurl[j] = ahref[j].getAttribute("href");
-            j++;
-            //xbug(movurl[i]);
-            //xbug("hi",i,"hi");
-        }
-    }
-    //xbug(movurl);
-    count = 0;
-    getmovpage(movurl[count],document,function(movdoc){
-                xbug("h",count,"h");
-                xbug(movurl[count]);
-                xbug(ahref[count]);
-                geturl(movurl[count],movdoc,function(curmovieflv,zh_srt,en_srt){
-                    insert2(curmovieflv,zh_srt,en_srt,ahref[count],movdoc);
-                });
-            });
-    timer = setInterval(sentMsg,5000);*/
 }
 //处理单独视频页面
 function processmoviepage(url,doc){
